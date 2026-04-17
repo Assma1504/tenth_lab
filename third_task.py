@@ -4,8 +4,8 @@ path = ("./images/birthDay2.jfif")
 myImg = Image.open(path)
 newImg = Image.new("RGBA", myImg.size)
 imgDraw = ImageDraw.ImageDraw(newImg)
-# personName = input("Who you want to congratulate: ")
-personName = "Assma"
+personName = input("Who you want to congratulate: ")
+# personName = "Assma"
 textCongratulation = (f"Congratulations {personName} !")
 font = ImageFont.truetype("C:/Windows/Fonts/arialbd.ttf", size=20)
 textBbox = imgDraw.textbbox((0, 0), textCongratulation, font=font)
